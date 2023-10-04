@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado do Formulário</title>
+</head>
+<body>
+    <h1>Dados do Formulário:</h1>
+    <p>Nome: <?php echo isset($_POST['nome']) ? $_POST['nome'] : ''; ?></p>
+    <p>Idade: <?php echo isset($_POST['idade']) ? $_POST['idade'] : ''; ?></p>
+    <p>E-mail: <?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?></p>
+    <p>Gênero: <?php echo isset($_POST['genero']) ? $_POST['genero'] : ''; ?></p>
+    <p>Comentários ou Observações: <?php echo isset($_POST['comentarios']) ? $_POST['comentarios'] : ''; ?></p>
+    <p>Senha: <?php echo isset($_POST['senha']) ? $_POST['senha'] : ''; ?></p>
+</body>
+</html>
