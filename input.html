@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <form action="resultado_formulario.html" method="post">
@@ -26,9 +27,13 @@
         <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
 
         <label for="senha">Senha (8-10 caracteres):</label>
-        <input type="password" id="senha" name="senha" minlength="8" maxlength="10" required><br><br>
+        <div class="password-field">
+            <input type="password" id="senha" name="senha" minlength="8" maxlength="10" required>
+            <button type="button" id="togglePassword">👁</button>
+        </div><br><br>
 
         <input type="submit" value="Enviar">
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
